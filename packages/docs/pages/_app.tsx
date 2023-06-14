@@ -13,6 +13,8 @@ import { wallets as exodus } from "@cosmos-kit/exodus-extension";
 import { wallets as omni } from "@cosmos-kit/omni";
 import { wallets as trust } from "@cosmos-kit/trust";
 import { wallets as station } from "@cosmos-kit/station";
+import { wallets as shell } from "@cosmos-kit/shell";
+
 import "nextra-theme-docs/style.css";
 import React from "react";
 
@@ -33,6 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           ...station,
           ...frontier,
           ...exodus,
+          ...shell,
         ]}
         wrappedWithChakra={true}
         walletConnectOptions={{
